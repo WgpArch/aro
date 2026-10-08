@@ -1,0 +1,18 @@
+site_name: WgpArch Aro Compositor Config
+site_url: https://wgparch.codeberg.page/aro/
+theme:
+  name: material
+  palette:
+    primary: amber
+    accent: amber
+  features:
+    - navigation.tabs
+    - navigation.expand
+nav:
+  - Home: index.md
+  - Credits & Attribution: credits.md
+  - Installation: installation.md
+  - Keybinds: keybinds.md
+  - Waybar & Scripts: waybar.md
+  - Look & Feel: theming.md
+  - Gallery: gallery.md

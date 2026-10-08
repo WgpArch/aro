@@ -1,0 +1,66 @@
+* {
+    font-family: 'Z003', 'Font Awesome 6 Free', 'Font Awesome 6 Brands';
+    font-size: 14px;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: #ffffff;
+}
+
+/* Define colors */
+@define-color sheer-bg rgba(30, 30, 30, 0.8);
+@define-color border rgba(255, 255, 255, 0.1);
+@define-color text #ffffff;
+@define-color hover #f4b668;
+
+/* ============ ext-workspaces: sheer pill ============ */
+#workspaces {
+    background: @sheer-bg;
+    border: 1px solid @border;
+    border-radius: 17px;
+    padding: 0 8px;
+    margin: 0 4px;
+}
+
+#workspaces button {
+    background: transparent;
+    border: none;
+    padding: 0 8px;
+    margin: 4px 2px;
+    color: @text;
+    font-weight: bold;
+    min-width: 24px;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+    background: rgba(244, 182, 104, 0.25);
+    color: @hover;
+}
+
+#workspaces button:hover {
+    background: rgba(244, 182, 104, 0.15);
+    color: @hover;
+}
+
+/* ============ Modules ============ */
+#custom-launcher, #tray, #clock, #custom-weather, #custom-player, 
+#memory, #cpu, #temperature, #battery, #custom-notification, 
+#pulseaudio, #disk, #custom-power {
+    background: @sheer-bg;
+    border: 1px solid @border;
+    border-radius: 17px;
+    padding: 0 12px;
+    margin: 0 4px;
+    color: @text;
+}
+
+#custom-launcher:hover, #custom-power:hover {
+    background: rgba(244, 182, 104, 0.25);
+    color: @hover;
+}
